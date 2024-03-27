@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 960px;
+    height: 90%;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    margin: 5px;
+
+}
+
+div {
+
+    background-color: rebeccapurple;
+    border: 2px solid greenyellow;
+
+}
+
+.red {
+    background-color: red;
+    border-color: brown 2px solid;
+}
