@@ -4,7 +4,7 @@ import "./styles/App.css";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [board, setBoard] = useState([]);
+  const [board, setBoard] = useState(Array.from({ length: 8 }, () => ({})));
 
   useEffect(() => {
     if (isLoading) {
