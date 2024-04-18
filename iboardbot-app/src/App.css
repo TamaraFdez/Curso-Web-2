@@ -1,0 +1,15 @@
+
+
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+header div span{
+  text-align: center;
+}
