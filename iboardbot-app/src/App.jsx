@@ -1,11 +1,13 @@
-import { useName } from "./hocks/useName";
-import "./App.css";
 
-// function login(newName) {
+import "./App.css";
+import { useState } from "react";
+
+
+// function login(newText) {
 //   fetch("https://ibb.muevetef/api/boards/jobs/main", {
 //     method: "POST",
 //     headers: { "Content-Type": "application/json" },
-//     body: JSON.stringify(newName),
+//     body: JSON.stringify(newText),
 //   })
 //     .then((res) => {
 //       if (res.ok) {
@@ -21,32 +23,32 @@ import "./App.css";
 // }
 
 function App() {
-  const { name, setName, error } = useName();
+ const [error, setError] = useState(null);
+ 
 
   const handleSumbit = (event) => {
     event.preventDefault();
     const newText = Object.fromEntries(new window.FormData(event.target));
     console.log(newText);
-    setName(newText.text);
-    console.log(error);
-    if (error !== null) {
-      // login(newName);
+    
+    if (newText.text === "") {
+      setError("No se puede jugar sin texto😭");
       console.log("json no enviado");
-    } else {
-      console.log("json enviado");
+      
+    }else {
+      setError(null)
+      // login(newText)
     }
   };
 
-  const handleReset = () => {
-    setName("");
-  };
+
 
   return (
     <>
-      <header>
-        <form id="form" onSubmit={handleSumbit}>
+      <main>
+        <form id="form-text" onSubmit={handleSumbit}>
           <label htmlFor="texto">
-            Escrito:{error && <span style={{ color: "red" }}>{error} </span>}
+            {error && <span style={{ color: "red" }}>{error} </span>}
           </label>
           <input
             type="text"
@@ -60,13 +62,13 @@ function App() {
           />
           <div>
             <button className="sumbit">Enviar</button>
-            <button type="reset" onClick={handleReset}>
+            <button type="reset">
               Borrar
             </button>
           </div>
         </form>
-        <div></div>
-      </header>
+        
+      </main>
     </>
   );
 }
