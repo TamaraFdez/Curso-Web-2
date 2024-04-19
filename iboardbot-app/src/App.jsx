@@ -112,9 +112,9 @@ function SvgForm() {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-svg">
       {error}
-      <input type="file" name="fileInput" accept="image/svg+xml" />
+      <input type="file" name="fileInput" accept="image/svg+xml" className="svg" />
       <button type="submit">Subir Archivo SVG</button>
     </form>
   );
@@ -186,10 +186,9 @@ function FormTwo() {
       <div id="container-form" className={`form ${exito === false ? "hide" : "active"}`}>
         <SvgForm />
         <TextForm />
-        <button type="button" onClick={handleBack}>
+        <button type="button" className="back" onClick={handleBack}>
           Atrás
         </button>
-        <button type="button">Borrar Lienzo</button>
       </div>
     </>
   );

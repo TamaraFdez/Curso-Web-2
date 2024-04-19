@@ -6,7 +6,9 @@ header{
 }
 main{
  position: absolute;
-
+ overflow: hidden;
+ height: 100dvh;
+ width: 100dvw;
 }
 
 #inicio {
@@ -29,15 +31,7 @@ main{
     font-size: 45px;
     color: #C94A65;
   }
-  .input-submit{
-    color: #2661AC;
-    background-color: #cfe1f8;
-    border: 1px solid #2661AC;
-    height: 30px;
-    width: 70px;
-    border-radius: 15px;
-    margin: 2px;
-  }
+ 
   .delete{
     color: #ffe4e6;
     background-color: #E24D57;
@@ -48,6 +42,16 @@ main{
     margin: 2px;
   }
   
+}
+input[type="text"]{
+  color: #2661AC;
+  background-color: #cfe1f8;
+  border: 1px solid #2661AC;
+  height: 30px;
+  width: 70px;
+  border-radius: 15px;
+  margin: 2px;
+  text-align: center;
 }
 
 header div span {
@@ -60,9 +64,7 @@ header div span {
   /* Ancho total de los formularios */
   transition: transform 3s ease;
   /* Animación de desplazamiento */
-
   height: 100%;
-
 }
 
 form {
