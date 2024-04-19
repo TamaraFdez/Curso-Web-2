@@ -1,0 +1,29 @@
+{
+  "Dragons": {
+    "Balerion": {
+      "id": 1,
+      "title": "El Terror Negro",
+      "image": "03.2-Memory/src/Images/balerion.jpg"
+    },
+    "Caraxes": {
+      "id": "caraxes",
+      "title": "El Anfíptero Sangriento",
+      "image": "03.2-Memory/src/Images/caraxes.jpg"
+    },
+    "Vaghar": {
+      "id": 3,
+      "title": "La Reina de Dragones",
+      "image": "03.2-Memory/src/Images/vhagar.jpg"
+    },
+    "Syrax": {
+      "id": 4,
+      "title": "La Consentida",
+      "image": "03.2-Memory/src/Images/syrax.jpg"
+    },
+    "Drogon": {
+      "id": 5,
+      "title": "La Sombra Alada",
+      "image": "03.2-Memory/src/Images/drogon.jpg"
+    }
+  }
+}
