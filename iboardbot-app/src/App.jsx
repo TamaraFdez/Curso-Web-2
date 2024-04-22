@@ -86,7 +86,7 @@ function SvgForm() {
 
       try {
         const response = await fetch(
-          "http://ibb.muevetef/api/boards/jobs/main/file",
+          "URL",
           {
             method: "POST",
         
@@ -130,7 +130,7 @@ function TextForm() {
       console.log("hay texto", text);
       try {
         const response = await fetch(
-          "http://ibb.muevetef/api/boards/jobs/main",
+          "URL",
           {
             method: "POST",
             headers: {
