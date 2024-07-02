@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "n6spTJzgULk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sistemas.DESKTOP-NO27NDH\\Desktop\\IFCD0210\\Curso-Web-2\\IDEjemplo\\IDEjemplo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sistemas.DESKTOP-NO27NDH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\sistemas.DESKTOP-NO27NDH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
