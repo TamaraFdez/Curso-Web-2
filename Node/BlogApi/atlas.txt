@@ -1,4 +1,1 @@
-user: tamarafdezosmi23
-pss: fQCLFfZkiZco49Mx
 
-mongosh "mongodb+srv://cluster0.yzgoz7b.mongodb.net/" --apiVersion 1 --username tamarafdezosmi23
